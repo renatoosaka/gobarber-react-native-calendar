@@ -45,7 +45,6 @@ export default App;
 Calendar supports some options to style the views:
 
 ```
-fontFamily?: string;
 colors?: {
   background?: string;
   header?: {
@@ -81,7 +80,7 @@ onMonthChange?: (date: Date) => void;
 onSelectDate?: (date: Date) => void;
 ```
 
-Week names, Month names, Colors and Font family has a default values:
+Week names, Month names and Colors has a default values:
 
 ```
 const defaultWeekNames = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
@@ -125,8 +124,6 @@ const defaultColors = {
     },
   },
 };
-
-const defaultFontFamily = 'Roboto';
 ```
 
 ![calendar](./resources/example.jpeg)

@@ -60,7 +60,6 @@ const defaultColors = {
 };
 
 interface CalendarProps {
-  fontFamily?: string;
   colors?: {
     background?: string;
     header?: {
@@ -101,7 +100,6 @@ const Calendar: React.FC<CalendarProps> = ({
   weekNames = defaultWeekNames,
   monthNames = defaultMonthNames,
   enabledPastDate = true,
-  fontFamily = 'Roboto',
   colors = defaultColors,
   onMonthChange,
   onSelectDate,
@@ -285,12 +283,7 @@ const Calendar: React.FC<CalendarProps> = ({
           {isShowPreviousMonth && <Image source={leftImg} />}
         </TouchableOpacity>
 
-        <Text
-          style={[
-            styles.title,
-            { color: componentColors.header?.text, fontFamily },
-          ]}
-        >
+        <Text style={[styles.title, { color: componentColors.header?.text }]}>
           {`${selectedMonthText} ${selectedYear}`}
         </Text>
 
@@ -306,9 +299,7 @@ const Calendar: React.FC<CalendarProps> = ({
               key={week}
               style={[styles.container, { width: containerWidth, height: 32 }]}
             >
-              <Text style={[styles.weekTitle, { fontFamily }]}>
-                {weekNames[week]}
-              </Text>
+              <Text style={styles.weekTitle}>{weekNames[week]}</Text>
             </View>
           ))}
         </View>
@@ -345,7 +336,6 @@ const Calendar: React.FC<CalendarProps> = ({
                     style={[
                       styles.dayText,
                       {
-                        fontFamily,
                         color: isDisabledDay(indexDay, day)
                           ? componentColors.day?.disabled?.text
                           : componentColors.day?.enabled?.text,

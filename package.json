@@ -1,6 +1,6 @@
 {
   "name": "@gobarber/react-native-calendar",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "GoBarber Mobile Calendar",
   "main": "dist/index.js",
   "author": "Renato Hideki Osaka <oi@renatohidekiosaka.com.br>",
