@@ -1,0 +1,34 @@
+{
+  "name": "@gobarber/react-native-calendar",
+  "version": "0.1.3",
+  "description": "GoBarber Mobile Calendar",
+  "main": "dist/index.js",
+  "author": "Renato Hideki Osaka",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && yarn tsc",
+    "postbuild": "cp -r ./src/assets ./dist"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12",
+    "@types/react-native": "^0.63.37",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
